@@ -435,7 +435,7 @@ def prepare_environment():
     if not args.skip_torch_cuda_test and not check_run_python("import torch; assert torch.cuda.is_available()"):
         raise RuntimeError(
             'Your device does not support the current version of Torch/CUDA! Consider download another version: \n'
-            'https://github.com/lllyasviel/stable-diffusion-wui-forge/releases/tag/latest'
+            'https://github.com/lllyasviel/stable-diffusion-web'+'ui-forge/releases/tag/latest'
             # 'Torch is not able to use GPU; '
             # 'add --skip-torch-cuda-test to COMMANDLINE_ARGS variable to disable this check'
         )
