@@ -1055,4 +1055,4 @@ def setup_ui_api(app):
     app.add_api_route("/internal/sysinfo-download", lambda: download_sysinfo(attachment=True), methods=["GET"])
 
     import fastapi.staticfiles
-    app.mount("/wui-assets", fastapi.staticfiles.StaticFiles(directory=launch_utils.repo_dir('stable-diffusion-wui-assets')), name="wui-assets")
+    app.mount("/wui-assets", fastapi.staticfiles.StaticFiles(directory=launch_utils.repo_dir('sd-wui-assets')), name="wui-assets")
